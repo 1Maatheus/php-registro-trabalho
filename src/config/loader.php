@@ -5,7 +5,6 @@ function loadModel($modelName) {
 }
 
 function loadView($viewName, $params = array()) {
-
   if (count($params) > 0) {
     foreach ($params as $key => $value) {
       if (strlen($key) > 0) {
@@ -13,6 +12,5 @@ function loadView($viewName, $params = array()) {
       }
     }
   }
-
   require_once(VIEW_PATH . "/{$viewName}.php");
 }
