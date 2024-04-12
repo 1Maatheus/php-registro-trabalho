@@ -14,8 +14,7 @@
     <div class="logo">
       <i class="icofont-travelling mr-2"></i>
       <span class="font-weight-light">Ponto</span>
-      <span class="font-weight-bold mx-2">S</span>
-      <span class="font-weight-light">eguro</span>
+      <i class="icofont-runner-alt-1 ml-2"></i>
     </div>
     <div class="menu-toggle mx-3">
       <i class="icofont-navigation-menu"></i>
