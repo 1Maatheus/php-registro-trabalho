@@ -9,6 +9,13 @@ $records = WorkingHours::loadFromUserAndDate($user->id, date('Y-m-d'));
 
 try {
   $currentTime = date('H:i:s');
+
+  if($_POST['forcedTime']) {
+    $currentTime = $_POST['forcedTime'];
+  } else {
+    $currentTime = date('H:i:s');
+  }
+
   $records->innout($currentTime);
   addSuccesMsg('Ponto inserido com sucesso!');
 } catch(AppException $e) {
